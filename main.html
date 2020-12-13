@@ -1,0 +1,141 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1, 
+				shrink-to-fit=no"> 
+<title> 
+	To do list
+</title> 
+
+<link rel= "stylesheet" href="css/style.css"/>
+<!-- Include Bootstrap for styling -->
+<link rel="stylesheet"
+		href= 
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+
+<!-- Include the Bootstrap Table CSS 
+for the table -->
+<link rel="stylesheet"
+		href= 
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head> 
+
+<body background="white-wallpapers-1.jpg">
+  <style> 
+		table { 
+      margin: 0 auto; 
+      color: grey;
+			font-size: large; 
+      border: 1px solid black; 
+      
+		} 
+
+		
+
+		td { 
+			background-color: #E4F5D4; 
+			border: 1px solid black; 
+		} 
+
+		th, 
+		td { 
+			font-weight: bold; 
+			border: 1px solid black; 
+			padding: 10px; 
+			text-align: center; 
+		} 
+
+		td { 
+			font-style: inherit; 
+		} 
+	</style> 
+  
+        <!--navbar starts-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand" href="#"><img src="avcomlogo1.png" alt="logo"></a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Login <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">To Do List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--navbar ends-->
+
+	     
+        <div class="container">
+          <h1 class="name">TO DO LIST</h1>
+         
+          
+          <table class="table-striped border-success" id="mytable"> 
+            <thead> 
+            <tr> 
+              <th data-field="userId"> 
+              <span class="text-success"> 
+                USER ID
+              </span> 
+              </th> 
+              <th data-field="id"> 
+              <span class="text-success"> 
+                ID 
+              </span> 
+              </th> 
+              <th data-field="title"> 
+              <span class="text-success"> 
+                TITLE
+              </span> 
+                    </th> 
+                    <th data-field="completed" id="mytable">
+                      <span class="text-success"> 
+                        COMPLETED
+                      </span> 
+                            </th> 
+                    </tr> 
+                    <button onclick="ajax()">Load</button> 
+                    <tbody id="mytable"></tbody>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td id = "row"><input type= "checkbox"></td>
+                   
+            
+          </table> 
+        </div> 
+       
+<!--footer starts-->
+<footer>
+  <h6>Copyright@2021</h6>
+</footer>
+
+<!-- Include jQuery and other required 
+files for Bootstrap -->
+<script src= 
+"https://code.jquery.com/jquery-3.3.1.min.js"> 
+</script> 
+<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+</script> 
+<script src= 
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+</script> 
+
+<!-- Include the JavaScript file 
+for Bootstrap table -->
+<script src= 
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"> 
+</script> 
+<script src="Ajax.js"> </script>
+	
+</body> 
+</html>
